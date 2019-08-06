@@ -17,9 +17,7 @@ class dice
     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
     return randomNumber;
   }
-
 }
-
 
 //d2 dice roll.  
 
@@ -34,19 +32,6 @@ d2Button.onclick = function() {
   printNumber(result);
 };
 
-// var d2Dice = 
-// {
-//   sides: 2,
-//   roll: function () 
-//   {
-//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-//     return randomNumber;
-//   }
-// }
-
-
-
-
 //d3 dice roll.
 
 let d3Dice = new dice(3);
@@ -60,18 +45,6 @@ d3Button.onclick = function() {
   printNumber(result);
 };
 
-// var d3Dice = 
-// {
-//   sides: 3,
-//   roll: function () 
-//   {
-//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-//     return randomNumber;
-//   }
-// }
-
-
-
 //d4 dice roll.
 
 let d4Dice = new dice(4);
@@ -84,16 +57,6 @@ d4Button.onclick = function() {
   var result = d4Dice.roll();
   printNumber(result);
 };
-// var d4Dice = {
-
-  //   sides: 4,
-  //   roll: function () 
-  //   {
-    //     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    //     return randomNumber;
-    //   }
-    // }
-    
     
 //d6 dice roll.
 
@@ -108,17 +71,6 @@ d6Button.onclick = function() {
   printNumber(result);
 };
 
-// var d6Dice = 
-// {
-//   sides: 6,
-//   roll: function () 
-//   {
-//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-//     return randomNumber;
-//   }
-// }
-
-
 //d8 dice roll.
 
 let d8Dice = new dice (8)
@@ -131,17 +83,6 @@ d8Button.onclick = function() {
   var result = d8Dice.roll();
   printNumber(result);
 };
-
-// var d8Dice = 
-// {
-//   sides: 8,
-//   roll: function () 
-//   {
-//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-//     return randomNumber;
-//   }
-// }
-
 
 //d10 dice roll.
 
@@ -156,17 +97,6 @@ d10Button.onclick = function() {
   printNumber(result);
 };
 
-// var d10Dice = 
-// {
-//   sides: 10,
-//   roll: function () 
-//   {
-//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-//     return randomNumber;
-//   }
-// }
-
-
 //d12 dice roll.
 
 let d12Dice = new dice(12);
@@ -179,15 +109,6 @@ d12Button.onclick = function() {
   var result = d12Dice.roll();
   printNumber(result);
 };
-
-// var d12Dice = {
-//   sides: 12,
-//   roll: function () 
-//   {
-//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-//     return randomNumber;
-//   }
-// }
 
 //d20 dice roll.
 
@@ -202,16 +123,6 @@ d20Button.onclick = function() {
   printNumber(result);
 };
 
-// var d20Dice = 
-// {
-//   sides: 20,
-//   roll: function () 
-//   {
-//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-//     return randomNumber;
-//   }
-// }
-
 //d100 dice roll.
 
 let d100Dice = new dice(100);
@@ -225,19 +136,10 @@ d100Button.onclick = function() {
   printNumber(result);
 };
 
-// var d100Dice = 
-// {
-//   sides: 100,
-//   roll: function () 
-//   {
-//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-//     return randomNumber;
-//   }
-// }
-
 //custom dice roller. 
-//could be used to assign random attacks to teammates. 
+//could be used to assign random attacks to teammates etc.. 
 
+// let customDice = new dice(diceInput);
 
 // var customDice = 
 // {
@@ -259,22 +161,8 @@ d100Button.onclick = function() {
       // };
       
       //prints dice roll to the page
-      
-      function printNumber(number) {
-        var placeholder = document.getElementById('placeholder');
-        placeholder.innerHTML = number;
-      }
-      
-      
-      // function printNumber(number) {
-        //   var placeholder = document.getElementById('placeholder');
-        //   placeholder.innerHTML = number;
-  // }
   
-  // var button = document.getElementById('button');
-  
-  // button.onclick = function() {
-  //   var result = dice.roll();
-  //   printNumber(result);
-  // };
-  
+  function printNumber(number) {
+    var placeholder = document.getElementById('placeholder');
+    placeholder.innerHTML = number;
+  }

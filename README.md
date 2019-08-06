@@ -4,3 +4,8 @@ Looking to find how to create a custom buttom to change the singe dice rolling f
     
 
 Creating the different instance of a standard dice set for dnd including a d100.
+
+
+Updated JS to use a class for all dice rolling functions instead of a function for each individual dice. 
+
+http://es6-features.org/#ClassDefinition
