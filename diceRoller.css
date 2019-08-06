@@ -1,0 +1,46 @@
+body
+{
+    max-width: 80vw;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+#dice_roller
+{
+    display: flex;
+    max-width: 80%;
+    border: 3px goldenrod solid;
+    margin: 0 auto;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+
+
+}
+
+.grid-row 
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border: 3px goldenrod solid;
+
+}
+
+.dice 
+{   
+    display: flex;
+    height: 30vh;
+    width: 30vh;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 3px goldenrod solid;
+    border-radius: 15%;
+    justify-content: center;
+    flex: 1;
+  }
+
+
+.dice_button
+{
+    align-self: center;
+}
