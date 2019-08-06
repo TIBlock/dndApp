@@ -3,18 +3,27 @@
 // Would like try and put this and other dice together for a standard dice set
 // and be able to roll multiples and have all the numbers plus the sum shown.
 
+//Creating dice class so i can call one function over and over instead of 10 different ones.
 
-//d2 dice roll.  
-
-var d2Dice = 
+class dice 
 {
-  sides: 2,
-  roll: function () 
+  constructor(sides) 
+  {
+    console.log('The dice is being constructed!');
+    this.sides = sides;
+  }
+  roll() 
   {
     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
     return randomNumber;
   }
+
 }
+
+
+//d2 dice roll.  
+
+let d2Dice = new dice(2);
 
 //button for d2
 
@@ -25,18 +34,22 @@ d2Button.onclick = function() {
   printNumber(result);
 };
 
+// var d2Dice = 
+// {
+//   sides: 2,
+//   roll: function () 
+//   {
+//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+//     return randomNumber;
+//   }
+// }
+
+
+
 
 //d3 dice roll.
 
-var d3Dice = 
-{
-  sides: 3,
-  roll: function () 
-  {
-    var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
-}
+let d3Dice = new dice(3);
 
 //button for d3
 
@@ -47,17 +60,21 @@ d3Button.onclick = function() {
   printNumber(result);
 };
 
+// var d3Dice = 
+// {
+//   sides: 3,
+//   roll: function () 
+//   {
+//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+//     return randomNumber;
+//   }
+// }
+
+
+
 //d4 dice roll.
 
-var d4Dice = {
-
-  sides: 4,
-  roll: function () 
-  {
-    var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
-}
+let d4Dice = new dice(4);
 
 //button for d4
 
@@ -67,18 +84,20 @@ d4Button.onclick = function() {
   var result = d4Dice.roll();
   printNumber(result);
 };
+// var d4Dice = {
 
+  //   sides: 4,
+  //   roll: function () 
+  //   {
+    //     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+    //     return randomNumber;
+    //   }
+    // }
+    
+    
 //d6 dice roll.
 
-var d6Dice = 
-{
-  sides: 6,
-  roll: function () 
-  {
-    var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
-}
+let d6Dice = new dice(6);
 
 //button for d6
 
@@ -89,17 +108,20 @@ d6Button.onclick = function() {
   printNumber(result);
 };
 
+// var d6Dice = 
+// {
+//   sides: 6,
+//   roll: function () 
+//   {
+//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+//     return randomNumber;
+//   }
+// }
+
+
 //d8 dice roll.
 
-var d8Dice = 
-{
-  sides: 8,
-  roll: function () 
-  {
-    var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
-}
+let d8Dice = new dice (8)
 
 //button for d8
 
@@ -110,17 +132,20 @@ d8Button.onclick = function() {
   printNumber(result);
 };
 
+// var d8Dice = 
+// {
+//   sides: 8,
+//   roll: function () 
+//   {
+//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+//     return randomNumber;
+//   }
+// }
+
+
 //d10 dice roll.
 
-var d10Dice = 
-{
-  sides: 10,
-  roll: function () 
-  {
-    var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
-}
+let d10Dice = new dice(10)
 
 //button for d10
 
@@ -131,16 +156,20 @@ d10Button.onclick = function() {
   printNumber(result);
 };
 
+// var d10Dice = 
+// {
+//   sides: 10,
+//   roll: function () 
+//   {
+//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+//     return randomNumber;
+//   }
+// }
+
+
 //d12 dice roll.
 
-var d12Dice = {
-  sides: 12,
-  roll: function () 
-  {
-    var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
-}
+let d12Dice = new dice(12);
 
 //button for d12
 
@@ -151,17 +180,18 @@ d12Button.onclick = function() {
   printNumber(result);
 };
 
+// var d12Dice = {
+//   sides: 12,
+//   roll: function () 
+//   {
+//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+//     return randomNumber;
+//   }
+// }
+
 //d20 dice roll.
 
-var d20Dice = 
-{
-  sides: 20,
-  roll: function () 
-  {
-    var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
-}
+let d20Dice = new dice(20);
 
 //button for d20
 
@@ -172,18 +202,19 @@ d20Button.onclick = function() {
   printNumber(result);
 };
 
+// var d20Dice = 
+// {
+//   sides: 20,
+//   roll: function () 
+//   {
+//     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+//     return randomNumber;
+//   }
+// }
 
 //d100 dice roll.
 
-var d100Dice = 
-{
-  sides: 100,
-  roll: function () 
-  {
-    var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
-}
+let d100Dice = new dice(100);
 
 //button for d100
 
@@ -194,13 +225,9 @@ d100Button.onclick = function() {
   printNumber(result);
 };
 
-//custom dice roller. 
-//could be used to assign random attacks to teammates. 
-
-
-// var customDice = 
+// var d100Dice = 
 // {
-//   sides: customDiceInput,
+//   sides: 100,
 //   roll: function () 
 //   {
 //     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
@@ -208,26 +235,40 @@ d100Button.onclick = function() {
 //   }
 // }
 
-// //button for custom dice. 
+//custom dice roller. 
+//could be used to assign random attacks to teammates. 
 
-// var custDiceButton = document.getElementById('custDiceButton');
 
-// custDiceButton.onclick = function() {
-//   var result = customDice.roll();
-//   printNumber(result);
-// };
-
-//prints dice roll to the page
-
-function printNumber(number) {
-  var placeholder = document.getElementById('placeholder');
-  placeholder.innerHTML = number;
-}
-  
-  
-  // function printNumber(number) {
-  //   var placeholder = document.getElementById('placeholder');
-  //   placeholder.innerHTML = number;
+// var customDice = 
+// {
+  //   sides: customDiceInput,
+  //   roll: function () 
+  //   {
+    //     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+    //     return randomNumber;
+    //   }
+    // }
+    
+    // //button for custom dice. 
+    
+    // var custDiceButton = document.getElementById('custDiceButton');
+    
+    // custDiceButton.onclick = function() {
+      //   var result = customDice.roll();
+      //   printNumber(result);
+      // };
+      
+      //prints dice roll to the page
+      
+      function printNumber(number) {
+        var placeholder = document.getElementById('placeholder');
+        placeholder.innerHTML = number;
+      }
+      
+      
+      // function printNumber(number) {
+        //   var placeholder = document.getElementById('placeholder');
+        //   placeholder.innerHTML = number;
   // }
   
   // var button = document.getElementById('button');
