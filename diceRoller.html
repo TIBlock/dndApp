@@ -11,57 +11,68 @@
 <body>
 
     
-    <div id="dice_roller" class="column">
-        <p id="placeholder">
+    <div id="dice_roller" class="container">
+        <div id="outputWindow" class="row">
+            <p id="placeholder" class="col">
+
+                </p>
+        </div>
+
+        <div id="diceButCont1" class="row">
+
+            <div id="d2Dice" class="dice col">
+                <button id="d2Button" class="dice_button">Roll d2 Dice</button>
     
-            </p>
-        <div id="d2Dice" class="grid-row dice">
-            <button id="d2Button" class="dice_button">Roll d2 Dice</button>
-
+            </div>
+            <div id="d3Dice" class="dice col" >
+                <button id="d3Button" class="dice_button">Roll d3 Dice</button>
+    
+            </div>
+            <div id="d4Dice" class="dice col">
+                <button id="d4Button" class="dice_button">Roll d4 Dice</button>
+    
+            </div>
         </div>
-        <div id="d3Dice" class="grid-row dice">
-            <button id="d3Button" class="dice_button">Roll d3 Dice</button>
+        <div id="diceButCont2" class="row">
 
-        </div>
-        <div id="d4Dice" class="grid-row dice">
-            <button id="d4Button" class="dice_button">Roll d4 Dice</button>
+            <div id="d6Dice" class="dice col">
+                <button id="d6Button" class="dice_button">Roll d6 Dice</button>
 
-        </div>
-        <div id="d6Dice" class="grid-row dice">
-            <button id="d6Button" class="dice_button">Roll d6 Dice</button>
+            </div>
+            <div id="d8Dice" class="dice col">
+                <button id="d8Button" class="dice_button">Roll d8 Dice</button>
 
-        </div>
-        <div id="d8Dice" class="grid-row dice">
-            <button id="d8Button" class="dice_button">Roll d8 Dice</button>
+            </div>
+            <div id="d10Dice" class="dice col">
+                <button id="d10Button" class="dice_button">Roll d10 Dice</button>
 
+            </div>
         </div>
-        <div id="d10Dice" class="grid-row dice">
-            <button id="d10Button" class="dice_button">Roll d10 Dice</button>
-
+        
+        <div id="diceButCont3" class="row">
+            <div id="d12Dice" class="dice col">
+                <button id="d12Button" class="dice_button">Roll d12 Dice</button>
+    
+            </div>
+            <div id="d20Dice" class="dice col">
+                <button id="d20Button" class="dice_button">Roll d20 Dice</button>
+    
+            </div>
+            <div id="d100Dice" class="dice col">
+                <button id="d100Button" class="dice_button">Roll d100 Dice</button>
+            </div>
         </div>
-        <div id="d12Dice" class="grid-row dice">
-            <button id="d12Button" class="dice_button">Roll d12 Dice</button>
-
-        </div>
-        <div id="d20Dice" class="grid-row dice">
-            <button id="d20Button" class="dice_button">Roll d20 Dice</button>
-
-        </div>
-        <div id="d100Dice" class="grid-row dice">
-            <button id="d100Button" class="dice_button">Roll d100 Dice</button>
-
-        </div>
-        <div id="customDice" class="grid-row dice">
+        <div id="customDiceCont" class="row">
+        <div id="customDice" class="dice col">
             <button id="custDiceButton" class="dice_button">Roll Custom Dice</button>
-
         </div>
-        <div id="rollOutput">
-
         </div>
-    </div>
+        <!-- <div id="rollOutput">
+
+        </div> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    <script src="dice.js"></script>
 </body>
 </html>
-<script src="dice.js"></script>

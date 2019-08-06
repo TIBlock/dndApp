@@ -1,46 +1,90 @@
-body
+/* body
 {
+    display: flex;
     max-width: 80vw;
     margin: 0 auto;
     margin-top: 20vh;
-}
+} */
 
 #dice_roller
 {
+    max-width: 60%;
+} 
+
+#outputWindow
+{
+    height:15vw;
+    border: 4px grey solid;
+    margin: 2vw;
     display: flex;
-    max-width: 80%;
-    border: 3px goldenrod solid;
-    margin: 0 auto;
-    justify-content: flex-start;
-    flex-wrap:wrap;
-
-
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 
-.grid-row 
+.dice
 {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    border: 3px goldenrod solid;
+    justify-content: space-between;
+    height:10vw;
+    justify-content: center;
 
 }
-
-.dice 
-{   
-    display: flex;
-    height: 30vh;
-    width: 30vh;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 3px goldenrod solid;
-    border-radius: 15%;
-    justify-content: center;
-    flex: 1;
-  }
-
 
 .dice_button
 {
     align-self: center;
 }
+
+#placeholder
+{
+
+    font-size: 8em;
+}
+
+/* #outputWindow
+{
+    border: 3px goldenrod solid;
+    max-width: 100%;
+} */
+
+/* #diceButCont1
+{
+    flex:1;
+} */
+
+/* #diceButCont2
+{
+    flex:1;
+} */
+
+/* #diceButCont3
+{
+    flex:1;
+} */
+
+/* #customDiceCont
+{
+    flex:1;
+    width: 100%
+} */
+
+/* .dice_button
+{
+    align-self: center;
+    font-size: 2vw
+} */
+
+
+/* .dice 
+{   
+    display: flex;
+    height: 30vh;
+    width: 26vw;
+    padding: ;
+    box-sizing: border-box;
+    border: 3px goldenrod solid;
+    border-radius: 15%;
+    justify-content: center;
+    flex: 1;
+  } */
