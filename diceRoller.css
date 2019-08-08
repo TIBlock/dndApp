@@ -1,9 +1,7 @@
-/* body
-{
-    display: flex;
-    max-width: 100vw;
-    /* height: 100vh; 
-}*/
+body{
+    width: 80%;
+    background: gray;
+}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -15,20 +13,24 @@
 #dice_roller
 {
     max-width: 60%;
-    height: 95vh;
+    height: 100vh;
     margin: 2vh 20vw;
+    background-color: blanchedalmond;
+    padding: 1vw;
 } 
 
 #outputWindow
 {
     height:15vw;
-    border: 4px grey solid;
-    margin: 1vw;
+    margin: 2vw;
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
+    border: 4px grey solid;
     border-radius: 30px;
+    background-color: blanchedalmond;
+
 }
 
 .dice
@@ -37,9 +39,10 @@
     justify-content: space-between;
     height:10vh;
     justify-content: center;
+    background-color: blanchedalmond;
     border: 4px grey solid;
     border-radius: 30px;
-    margin: 2vw;
+    margin: 3vh;
 }
 
 .dice_button

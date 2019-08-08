@@ -3,8 +3,7 @@
 // Would like try and put this and other dice together for a standard dice set
 // and be able to roll multiples and have all the numbers plus the sum shown.
 
-//Creating dice class so i can call one function over and over instead of 10 different ones.
-
+//dice class that is used to roll the different dice
 class dice 
 {
   constructor(sides) 
@@ -19,6 +18,12 @@ class dice
   }
 }
 
+//prints dice roll to the page
+
+function printNumber(number) {
+  var placeholder = document.getElementById('placeholder');
+  placeholder.innerHTML = number;
+}
 //d2 dice roll.  
 
 let d2Dice = new dice(2);
@@ -160,9 +165,3 @@ d100Button.onclick = function() {
       //   printNumber(result);
       // };
       
-      //prints dice roll to the page
-  
-  function printNumber(number) {
-    var placeholder = document.getElementById('placeholder');
-    placeholder.innerHTML = number;
-  }
