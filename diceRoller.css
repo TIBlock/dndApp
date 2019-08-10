@@ -1,6 +1,15 @@
+/* TRY USING EM FOR FONTS
+Ancor em to the width of the parent. (body)
+Example  https://thestory.church/ */
+
+
+
 body{
-    width: 80%;
+    width: 60em;
+    height: 100em;
     background: gray;
+    margin: auto;
+    font-size: 2.5em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -13,10 +22,10 @@ body{
 #dice_roller
 {
     max-width: 60%;
-    height: 100vh;
-    margin: 2vh 20vw;
+    /* height: 100vh; */
+    /* margin: 2vh 20vw; */
     background-color: blanchedalmond;
-    padding: 1vw;
+    padding: .8em;
 } 
 
 #outputWindow
@@ -30,6 +39,7 @@ body{
     border: 4px grey solid;
     border-radius: 30px;
     background-color: blanchedalmond;
+    font-size: 6em;
 
 }
 
@@ -37,7 +47,7 @@ body{
 {
     display: flex;
     justify-content: space-between;
-    height:10vh;
+    height:4em;
     justify-content: center;
     background-color: blanchedalmond;
     border: 4px grey solid;
@@ -49,13 +59,13 @@ body{
 {
     border-radius: 30vw;
     align-self: center;
-    font-size: 2vw;
+    font-size: 1em;
 }
 
 #placeholder
 {
 
-    font-size: 14vw;
+    
 }
 
 /* #outputWindow
